@@ -1,5 +1,7 @@
 package com.example.api_sample;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -7,4 +9,6 @@ import org.apache.ibatis.annotations.Select;
 public interface BookMapper {
 	@Select("SELECT id, name, page_count, author_id FROM book WHERE id=#{id}")
 	Book getById(Integer id);
+	@Select("SELECT id, name, page_count, author_id FROM book")
+	List<Book> findAll();
 }

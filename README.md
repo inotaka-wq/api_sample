@@ -15,3 +15,17 @@ query bookDetails {
     }
   }
 }
+
+
+query bookDetails {
+  bookAll {
+    id
+    name
+    pageCount
+    author {
+      id
+      firstName
+      lastName
+    }
+  }
+}
