@@ -3,9 +3,8 @@
 
 http://localhost:8080/graphiql
 
-
 query bookDetails {
-  bookById(id: "book-1") {
+  bookById(id: 1) {
     id
     name
     pageCount
