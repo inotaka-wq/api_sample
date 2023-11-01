@@ -3,7 +3,7 @@
 
 http://localhost:8080/graphiql
 
-query bookDetails {
+query {
   bookById(id: 1) {
     id
     name
@@ -17,7 +17,7 @@ query bookDetails {
 }
 
 
-query bookDetails {
+query {
   bookAll {
     id
     name
