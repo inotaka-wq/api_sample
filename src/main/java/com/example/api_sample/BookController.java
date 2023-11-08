@@ -31,6 +31,6 @@ public class BookController {
 	// N+1問題
 	@SchemaMapping
 	public Author author(Book book) {
-		return authorMapper.getById(book.authorId());
+		return authorMapper.getById(book.getAuthorId());
 	}
 }
